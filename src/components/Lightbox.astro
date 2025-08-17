@@ -1,0 +1,47 @@
+---
+// components/Lightbox.astro
+const { src, alt = '' } = Astro.props;
+const id = `lb-${Math.random().toString(36).substr(2, 9)}`;
+// Si el src no empieza por '/', lo añadimos
+const assetPath = src.startsWith('/')
+  ? `/src/assets${src}`
+  : `/src/assets/${src}`;
+---
+
+
+<style>
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .lightbox-overlay img {
+    width: auto;
+    height: 90vh;
+    object-fit: contain;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .lightbox-overlay {
+    display: flex;
+  }
+  .thumb {
+    max-width: 100%;
+    cursor: pointer;
+  }
+</style>
+
+<label>
+  <input type="checkbox" id={id} />
+  <img src={assetPath} alt={alt} class="thumb" />
+  <label class="lightbox-overlay" for={id}>
+    <img src={assetPath} alt={alt} />
+  </label>
+</label>
+

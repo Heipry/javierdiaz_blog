@@ -1,31 +1,72 @@
 ---
-title: 'Using MDX'
+title: 'Usando el sistema MDX'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jun 01 2024'
+pubDate: 'Jun 01 2025'
 heroImage: '../../assets/blog-placeholder-5.jpg'
 ---
 
-This theme comes with the [@astrojs/mdx](https://docs.astro.build/en/guides/integrations-guide/mdx/) integration installed and configured in your `astro.config.mjs` config file. If you prefer not to use MDX, you can disable support by removing the integration from your config file.
+MDX es una extensión de Markdown que permite incluir componentes de React, Vue, Svelte y otros frameworks dentro de archivos Markdown. Esto significa que puedes escribir contenido estático en Markdown y, al mismo tiempo, incorporar componentes interactivos o dinámicos.
 
-## Why MDX?
+Aunque MDX se popularizó inicialmente en entornos como **Astro**, **Next.js** o **Gatsby**, no está limitado a estos frameworks. Hoy, en 2025, sigue siendo relevante para proyectos que necesitan documentación interactiva, blogs técnicos, tutoriales o contenido educativo donde se mezclan texto y componentes dinámicos.
 
-MDX is a special flavor of Markdown that supports embedded JavaScript & JSX syntax. This unlocks the ability to [mix JavaScript and UI Components into your Markdown content](https://docs.astro.build/en/guides/markdown-content/#mdx-features) for things like interactive charts or alerts.
+### ¿Por qué usar MDX?
 
-If you have existing content authored in MDX, this integration will hopefully make migrating to Astro a breeze.
+* Permite combinar la simplicidad de Markdown con la potencia de componentes interactivos.
+* Facilita la migración de contenido Markdown estático a contenido dinámico sin reescribir todo desde cero.
+* Es compatible con entornos modernos de desarrollo y herramientas como **Visual Studio Code**, que ofrece extensiones para previsualizar y editar MDX.
 
-## Example
+### Contexto en 2025
 
-Here is how you import and use a UI component inside of MDX.  
-When you open this page in the browser, you should see the clickable button below.
+MDX hoy en día sigue siendo ampliamente utilizado en:
 
+* Documentación técnica interactiva (ej. **Storybook Docs**, **Docusaurus**).
+* Blogs y sitios educativos que quieren mezclar texto y componentes de UI.
+* Integraciones con editores online que soportan Markdown avanzado, como **StackBlitz**, **CodeSandbox** o editores de documentación como **Notion** y **Obsidian**, a través de plugins o extensiones.
+
+Su relevancia radica en que permite un flujo de trabajo **reactivo y modular**, donde cada componente puede actualizarse sin afectar el resto del contenido.
+
+### Ejemplo de uso
+
+En MDX puedes importar y usar un componente de UI directamente dentro de tu Markdown:
+
+```mdx
+import HeaderLink from './BotonInteractivo.jsx';
+
+<BotonInteractivo texto="Haz clic aquí MDX" />
+```
 import HeaderLink from '../../components/HeaderLink.astro';
 
-<HeaderLink href="#" onclick="alert('clicked!')">
-	Embedded component in MDX
+<HeaderLink href="#" onclick="alert('Hiciste click!')">
+	Haz click aqui MDX
 </HeaderLink>
+Cuando se renderiza en un entorno que soporta MDX (como VS Code con previsualización o un servicio online compatible), el botón será completamente interactivo. Sin MDX, este tipo de contenido se limitaría a HTML estático.
 
-## More Links
+### Consideraciones
 
-- [MDX Syntax Documentation](https://mdxjs.com/docs/what-is-mdx)
-- [Astro Usage Documentation](https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages)
-- **Note:** [Client Directives](https://docs.astro.build/en/reference/directives-reference/#client-directives) are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default.
+* Aunque MDX permite interactividad, **todavía depende de directivas de cliente** o configuración del framework para que los componentes sean dinámicos.
+* Por defecto, si lo usas en un entorno estático, todos los componentes se renderizan como HTML sin funcionalidad JavaScript.
+
+### Herramientas y entornos que soportan MDX
+
+* **Frameworks**: Astro, Next.js, Gatsby, Remix.
+* **Editores**: Visual Studio Code, JetBrains WebStorm (con plugins).
+* **Servicios online**: CodeSandbox, StackBlitz, Vercel Docs, Netlify con Markdown dinámico.
+* **Plugins de productividad**: Obsidian, Notion (con extensiones o embed de JSX).
+
+### Perspectivas de uso
+
+En 2025, MDX sigue evolucionando con enfoque en:
+
+* Educación online interactiva.
+* Blogs técnicos con contenido modular y reutilizable.
+* Documentación de librerías y componentes UI.
+* Proyectos donde la separación entre contenido y lógica interactiva es crítica.
+
+## Otros Links
+
+Aquí tienes la traducción manteniendo los enlaces intactos:
+
+* [Documentación de la sintaxis de MDX](https://mdxjs.com/docs/what-is-mdx)
+* [Documentación de uso de Astro](https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages)
+* **Nota:** Las [Directivas de Cliente](https://docs.astro.build/en/reference/directives-reference/#client-directives) siguen siendo necesarias para crear componentes interactivos. De lo contrario, todos los componentes en tu MDX se renderizarán como HTML estático (sin JavaScript) por defecto.
+
