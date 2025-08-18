@@ -11,21 +11,20 @@ Aquí tienes un ejemplo de sintaxis básica de Markdown que se puede usar al esc
 
 Los siguientes elementos HTML `<h1>`—`<h6>` representan seis niveles de encabezados de sección. `<h1>` es el nivel de sección más alto, mientras que `<h6>` es el más bajo.
 
-# H1
+# \# H1 
 
-## H2
+## \## H2
 
-### H3
+### \### H3
 
-#### H4
+#### \#### H4
 
-##### H5
+##### \##### H5
 
-###### H6
+###### \###### H6
 
 ## Párrafo
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo tempore a neque. Dignissimos sequi dolore unde dolor, molestiae aut provident distinctio nostrum, non dicta consequatur ab dolores asperiores. Quo!
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
@@ -66,6 +65,7 @@ El elemento blockquote representa contenido citado de otra fuente, opcionalmente
 ```markdown
 > No comuniques compartiendo memoria, comparte memoria comunicando.<br>
 > — <cite>Rob Pike[^1]</cite>
+[^1]: La cita anterior está extraída de la charla de Rob Pike [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) durante Gopherfest, 18 de noviembre de 2015.
 ```
 
 #### Resultado
@@ -75,6 +75,8 @@ El elemento blockquote representa contenido citado de otra fuente, opcionalmente
 
 [^1]: La cita anterior está extraída de la charla de Rob Pike [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) durante Gopherfest, 18 de noviembre de 2015.
 
+
+Tendrás que mirar al pie de la página para ver la atribución completa
 ## Tablas
 
 ### Sintaxis
@@ -112,21 +114,6 @@ Podemos usar 3 acentos graves \`\`\` en una nueva línea, escribir el fragmento 
 ```
 ````
 
-### Resultado
-
-```html
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Ejemplo de Documento HTML5</title>
-  </head>
-  <body>
-    <p>Prueba</p>
-  </body>
-</html>
-```
-
 ## Tipos de listas
 
 ### Lista ordenada
@@ -157,9 +144,9 @@ Podemos usar 3 acentos graves \`\`\` en una nueva línea, escribir el fragmento 
 
 #### Resultado
 
-* Elemento de la lista
-* Otro elemento
-* Y otro más
+- Elemento de la lista
+- Otro elemento
+- Y otro más
 
 ### Lista anidada
 
@@ -178,12 +165,10 @@ Podemos usar 3 acentos graves \`\`\` en una nueva línea, escribir el fragmento 
 #### Resultado
 
 * Frutas
-
   * Manzana
   * Naranja
   * Plátano
 * Lácteos
-
   * Leche
   * Queso
 
