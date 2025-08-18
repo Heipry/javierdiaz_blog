@@ -1,62 +1,42 @@
-# Astro Starter Kit: Blog
+# Blog de Javier Díaz ✨
 
-```sh
-npm create astro@latest -- --template blog
-```
+Bienvenido a [mi blog](https://heipry.github.io/javierdiaz_blog):  
+un espacio donde conecto **la teoría con la práctica** en el mundo del desarrollo web.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-Features:
+## 👨‍💻 Sobre mí
+Soy **Javier Díaz**, especializado en **desarrollo y gestión web** con más de una década de experiencia en el sector y una fuerte vocación docente.  
+Mi objetivo es transformar conceptos complejos en soluciones prácticas que puedas aplicar directamente en tus proyectos.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+En mi trayectoria he trabajado como desarrollador, gestor de proyectos IT y docente en programas de formación online, siempre combinando **experiencia real** con un enfoque **100% aplicable al mercado digital**.
 
-## 🚀 Project Structure
+📄 Conoce mi recorrido completo en mi [CV online](https://javierdiaz.com.es/).
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+## 📚 ¿Qué encontrarás aquí?
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Este blog está pensado tanto para quienes dan sus primeros pasos como para profesionales que buscan perfeccionar sus habilidades.  
+Los temas principales que trato son:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Desarrollo Web (Front-end y Back-end):** HTML5, CSS3, JavaScript (ES6+) y PHP.  
+- **Diseño UX/UI:** Principios de usabilidad y experiencia de usuario para interfaces intuitivas.  
+- **Gestión de Proyectos:** Estrategias, metodologías ágiles y herramientas para coordinar equipos.  
+- **Reflexiones del sector:** Tendencias tecnológicas y evolución del ecosistema digital.  
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🔍 Mi enfoque: de la teoría a la práctica
 
-## 🧞 Commands
+El conocimiento solo tiene valor si se puede aplicar.  
+Por eso todos los contenidos se centran en el **“cómo”** y el **“por qué”**, con ejemplos prácticos, tutoriales y reflexiones que ayudan a resolver problemas reales.  
 
-All commands are run from the root of the project, from a terminal:
+Además, este blog está desarrollado en **Astro**, un framework que me permite mantenerlo simple, rápido y con la flexibilidad de integrar componentes reutilizables que también servirán como material de aprendizaje.  
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+👉 Explora el blog aquí: [heipry.github.io/javierdiaz_blog](https://heipry.github.io/javierdiaz_blog)  
+👉 Descubre más sobre mí en: [javierdiaz.com.es](https://javierdiaz.com.es/)  
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+---
