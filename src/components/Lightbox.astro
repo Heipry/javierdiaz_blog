@@ -2,10 +2,8 @@
 // components/Lightbox.astro
 const { src, alt = '' } = Astro.props;
 const id = `lb-${Math.random().toString(36).substr(2, 9)}`;
-// Si el src no empieza por '/', lo añadimos
-const assetPath = src.startsWith('/')
-  ? `/assets${src}`
-  : `/assets/${src}`;
+const assetPath = `/javierdiaz_blog/assets/${src}`;
+
 ---
 
 
