@@ -1,3 +1,46 @@
 ---
-return Astro.redirect(`${import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'blog'}`);
+import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import Layout from '../layouts/BlogPost.astro';
 ---
+
+<Layout
+	title="Yo Soy Javier"
+	description="Docente y Consultor Web"
+	pubDate={new Date()}
+	heroImage={AboutHeroImage}
+>
+		<main>
+			<h2>Y este es el rincón donde conectamos la teoría con la práctica.</h2>
+			<p>
+				Especializado en el desarrollo y la gestión web, comparto en este blog mi experiencia de más de una década en el sector. Aquí encontrarás un espacio para profundizar en los fundamentos del ecosistema web, desde la base de HTML y CSS hasta las funcionalidades avanzadas de JavaScript y PHP. Mi objetivo es convertir conceptos complejos en soluciones prácticas que puedas aplicar directamente en tus proyectos.
+			</p>
+			<h2>Qué encontrarás aquí</h2>
+			<p>
+			Este blog está pensado tanto para quienes dan sus primeros pasos como para profesionales que buscan perfeccionar sus habilidades. Los temas principales que exploraremos son:
+			</p>
+			<ul>
+			<li>
+			<strong>Desarrollo Web (Front-end y Back-end):</strong>
+			Tutoriales claros y detallados sobre HTML5, CSS3, JavaScript (ES6+), y la lógica detrás de PHP para construir aplicaciones robustas.
+			</li>
+			<li>
+			<strong>Diseño UX/UI:</strong>
+			Principios de usabilidad y experiencia de usuario, flujos de diseño, y consejos para crear interfaces intuitivas y atractivas.
+			</li>
+			<li>
+			<strong>Gestión de Proyectos:</strong>
+			Estrategias y herramientas para organizar tu trabajo, gestionar proyectos digitales, y coordinar equipos de desarrollo.
+			</li>
+			<li>
+			<strong>Reflexiones del sector:</strong>
+			Análisis sobre las últimas tendencias en tecnología, metodologías de trabajo (como Scrum), y la evolución del entorno digital.
+			</li>
+			</ul>
+
+			<h2>Mi Enfoque: De la teoría a la práctica</h2>
+			<p>
+			Con más de 10 años de experiencia tanto en la trinchera del desarrollo como en la gestión de proyectos y la docencia, sé que el conocimiento tiene valor solo si se puede aplicar. Por eso, todos los contenidos de este blog se centran en el "cómo" y el "por qué".
+			Mi meta es ofrecerte un recurso útil que te ayude a resolver problemas reales, mejorar tus proyectos y avanzar en tu carrera profesional. ¡Gracias por acompañarme en este camino digital!
+			</p>
+		</main>
+</Layout>
