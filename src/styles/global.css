@@ -127,6 +127,30 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+.rss{
+	text-decoration: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.rss a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: #000d8a 1px solid;
+	gap: 1em;
+	padding: 0.5em 1em;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #000d8a;
+	font-weight: 700;
+	
+	
+}
+.rss span, .rss svg{
+	display: block;
+
+}
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
