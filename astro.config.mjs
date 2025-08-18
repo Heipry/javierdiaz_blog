@@ -6,7 +6,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://heipry.github.io/javierdiaz_blog",
-  base: "/javierdiaz_blog/",
+  site: "https://blog.javierdiaz.com.es",
+  base: "/",
   integrations: [mdx(), sitemap()],
 });
