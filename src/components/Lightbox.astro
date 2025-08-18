@@ -4,8 +4,8 @@ const { src, alt = '' } = Astro.props;
 const id = `lb-${Math.random().toString(36).substr(2, 9)}`;
 // Si el src no empieza por '/', lo añadimos
 const assetPath = src.startsWith('/')
-  ? `/src/assets${src}`
-  : `/src/assets/${src}`;
+  ? `/assets${src}`
+  : `/assets/${src}`;
 ---
 
 
