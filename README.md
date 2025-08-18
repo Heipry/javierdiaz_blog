@@ -1,6 +1,6 @@
 # Blog de Javier Díaz ✨
 
-Bienvenido a [mi blog](https://heipry.github.io/javierdiaz_blog):  
+Bienvenido a [mi blog](https://heipry.github.io/javierdiaz_blog/blog):  
 un espacio donde conecto **la teoría con la práctica** en el mundo del desarrollo web.
 
 ---
@@ -36,7 +36,7 @@ Además, este blog está desarrollado en **Astro**, un framework que me permite 
 
 ---
 
-👉 Explora el blog aquí: [heipry.github.io/javierdiaz_blog](https://heipry.github.io/javierdiaz_blog)  
+👉 Explora el blog aquí: [heipry.github.io/javierdiaz_blog](https://heipry.github.io/javierdiaz_blog/blog)  
 👉 Descubre más sobre mí en: [javierdiaz.com.es](https://javierdiaz.com.es/)  
 
 ---
