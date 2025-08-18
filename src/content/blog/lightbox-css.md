@@ -1,8 +1,8 @@
 ---
 title: 'Lightbox sin JavaScript (Con un truco de CSS)'
 description: 'Veemos un fragmento de código que ofrece la funcionalidad de lightbox para una imagen sin usar JavaScript.'
-pubDate: '21 Aug 2025'
-heroImage: '../../assets/blog-placeholder-5.jpg'
+pubDate: '21 Jul 2025'
+heroImage: '../../assets/blog-code.jpg'
 ---
 
 ### La Magia de un Lightbox sin JavaScript: Trucos con HTML y CSS
