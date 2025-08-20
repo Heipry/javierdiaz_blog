@@ -180,11 +180,11 @@ hr {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 3em;
-
 	}
 	.social {
 		display: flex;
 		justify-content: space-between;
+		gap: 1em;
 	}
 	.social-links a {
 		text-decoration: none;
