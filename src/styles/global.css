@@ -11,7 +11,7 @@
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--gray-gradient: rgba(var(--gray-light), 90%), #fff;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
@@ -127,30 +127,7 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
-.rss{
-	text-decoration: none;
-	display: flex;
-	justify-content: space-evenly;
-}
-.rss a {
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: #000d8a 1px solid;
-	gap: 1em;
-	padding: 0.5em 1em;
-	border-radius: 8px;
-	background-color: #fff;
-	color: #000d8a;
-	font-weight: 700;
-	
-	
-}
-.rss span, .rss svg{
-	display: block;
 
-}
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
@@ -176,4 +153,114 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+/*Footer*/
+	footer, .contact {				
+		text-align: center;
+	}
+	.contact{
+		padding: 2em 1em 4em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+	}
+	footer{
+		padding: 1em 1em 1em 1em;
+		background: rgb(var(--gray-dark));
+		color: rgb(var(--gray-light));
+	}
+	.social-links{
+		width: 720px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3em;
+
+	}
+	.social {
+		display: flex;
+		justify-content: space-between;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+	
+.rss{
+	text-decoration: none;
+	display: flex;
+}
+.rss a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: #000d8a 1px solid;
+	gap: 1em;
+	padding: 0.5em 1em;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #000d8a;
+	font-weight: 700;
+	font-size: 12px;
+}
+.rss span, .rss svg{
+	display: block;
+}
+/* Formulario */
+
+.contact-form{
+    width: 720px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+    padding: 1em;
+    color: rgb(var(--gray-dark));
+}
+.contact-form strong {
+  display: block;
+  margin-bottom: 40px;
+}
+.contact-form .form-group {
+    margin-bottom: 15px;
+	text-align: left;
+}
+.contact-form label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+	font-size: 15px;
+    font-weight: 500;
+}
+.contact-form .form-control {
+    background-color: rgba(var(--gray), .2);
+    border-radius: 6px;
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 0;
+    font-size: 14px;
+    border: none;
+
+}
+.contact-form textarea.form-control {
+  height: 115px;
+}
+.contact-form .btn {
+	margin-top: 15px;
+	background-color: rgb(var(--gray));
+	color: rgb(var(--gray-light));
+	border-radius: 6px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 28px;
+	padding: 4px 22px;
+	border: none;
+}
+.contact-form .btn:hover {
+	background-color: rgb(var(--gray-dark));
+	color: rgb(var(--gray-light));
+	
 }

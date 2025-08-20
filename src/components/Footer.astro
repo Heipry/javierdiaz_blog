@@ -1,10 +1,35 @@
 ---
 const today = new Date();
 ---
-
-<footer>
-	&copy; {today.getFullYear()} Javier Díaz. All rights reserved.
-	<div class="social-links">
+<section class="contact">
+	<div class="contact-form">
+                    <strong>Deja un mensaje</strong>
+                    <form name="contact-form" id="contact-form" action="https://send.pageclip.co/I65yeq0IeHj9vzHjAUJqQfU9NiabgN5W" class="pageclip-form" method="post">
+                        <div class="form-group">
+                            <label for="InputName1">Nombre</label>
+                            <input type="text" name="name" class="form-control" id="InputName1" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email</label>
+                            <input type="email" name="email" class="form-control" id="InputEmail1" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputSubject">Asunto</label>
+                            <input type="text" name="subject" class="form-control" id="InputSubject">
+                        </div>
+  						<div class="form-group">
+                            <label for="InputTextarea">Mensaje</label>
+                            <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
+                        </div>
+                        
+						<button type="submit" class="pageclip-form__submit btn">
+							<span>Enviar</span>
+						</button>
+                    </form>
+                </div>  
+			</form>
+		<div class="social-links">
+			<div class="social">
 		<a href="https://x.com/heipry" target="_blank">
 				<span class="sr-only">Follow me on Twitter</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -30,33 +55,20 @@ const today = new Date();
 				></path></svg
 			>
 		</a>
-	</div>
-	<div class="rss">
+		</div>
+		<div class="rss">
 		<a href="/rss.xml" title="Suscríbete a través de un lector de noticias" target="_blank">
-		<span>Suscribirse a través de RSS </span>
-		<svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 273 256 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M-271,360v48.9c31.9,0,62.1,12.6,84.7,35.2c22.6,22.6,35.1,52.8,35.1,84.8v0.1h49.1c0-46.6-19-88.7-49.6-119.4 C-182.2,379-224.4,360.1-271,360z"></path> <path d="M-237,460.9c-9.4,0-17.8,3.8-24,10s-10,14.6-10,24c0,9.3,3.8,17.7,10,23.9c6.2,6.1,14.6,9.9,24,9.9s17.8-3.7,24-9.9 s10-14.6,10-23.9c0-9.4-3.8-17.8-10-24C-219.2,464.7-227.6,460.9-237,460.9z"></path> <path d="M-90.1,348.1c-46.3-46.4-110.2-75.1-180.8-75.1v48.9C-156.8,322-64.1,414.9-64,529h49C-15,458.4-43.7,394.5-90.1,348.1z"></path> </g> </g></svg>
+		<span>Feed RSS </span>
+		<svg fill="#000000" height="12px" width="12px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 273 256 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M-271,360v48.9c31.9,0,62.1,12.6,84.7,35.2c22.6,22.6,35.1,52.8,35.1,84.8v0.1h49.1c0-46.6-19-88.7-49.6-119.4 C-182.2,379-224.4,360.1-271,360z"></path> <path d="M-237,460.9c-9.4,0-17.8,3.8-24,10s-10,14.6-10,24c0,9.3,3.8,17.7,10,23.9c6.2,6.1,14.6,9.9,24,9.9s17.8-3.7,24-9.9 s10-14.6,10-23.9c0-9.4-3.8-17.8-10-24C-219.2,464.7-227.6,460.9-237,460.9z"></path> <path d="M-90.1,348.1c-46.3-46.4-110.2-75.1-180.8-75.1v48.9C-156.8,322-64.1,414.9-64,529h49C-15,458.4-43.7,394.5-90.1,348.1z"></path> </g> </g></svg>
 </svg>
-		</a>
+		</a>	
+		</div>
 	</div>
+	
+		</section>
+<footer>
+	
+	&copy; {today.getFullYear()} Javier Díaz. All rights reserved.
+
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-</style>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
