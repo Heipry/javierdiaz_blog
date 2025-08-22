@@ -32,7 +32,14 @@ Esta simple línea de código dice: "Cuando el `checkbox` esté **marcado**, enc
 
 #### El Código y la Demo en Vivo
 
-Puedes ver el código completo y la demo interactiva en este [CodePen](https://codepen.io/jadigar/pen/gbavMEp). He simplificado el HTML y el CSS para que te sea fácil de entender y reutilizar en tus propios proyectos.
+Puedes ver el código completo y la demo interactiva en este [CodePen](https://codepen.io/jadigar/pen/gbavMEp). 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Imagen LightBox solo css" src="https://codepen.io/Heipry/embed/gbavMEp?default-tab=css" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Heipry/pen/gbavMEp">
+  Imagen LightBox solo css</a> by Javier Diaz (<a href="https://codepen.io/Heipry">@Heipry</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+He simplificado el HTML y el CSS para que te sea fácil de entender y reutilizar en tus propios proyectos.
 
 **HTML**
 
