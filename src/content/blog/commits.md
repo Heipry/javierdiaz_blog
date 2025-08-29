@@ -193,7 +193,7 @@ Evita siempre el uso de verbos en otros tiempos, ya que rompen la convención de
   feat: add PDF export support
   fix: correct tax calculation
   ```
-* En general, otra vezm **mantener consistencia**: no mezclar español e inglés en el mismo proyecto.
+* En general, otra vez lo más importante es **mantener consistencia**: no mezclar español e inglés en el mismo proyecto.
 
 ---
 
@@ -207,7 +207,7 @@ Evita siempre el uso de verbos en otros tiempos, ya que rompen la convención de
 
 ## 7. Cheat sheet descargable
 
-Para que tengas siempre a mano los tipos de commits y ejemplos prácticos, **he preparado un cheat sheet** que puedes G<a href="https://gist.github.com/Heipry/ed9b4844e65715b9214d82933f1e13f5" target="_blank" rel="noopener noreferrer">consultar en gist</a> o descargar en PDF:
+Para que tengas siempre a mano los tipos de commits y ejemplos prácticos, **he preparado un cheat sheet** que puedes <a href="https://gist.github.com/Heipry/ed9b4844e65715b9214d82933f1e13f5" target="_blank" rel="noopener noreferrer">consultar en gist</a> o descargar en PDF:
 <iframe src="/assets/commits.pdf" width="100%" height="600px">
   <p>Tu navegador no soporta iframes. Puedes descargar el PDF <a href="/assets/commits.pdf">aquí</a>.</p>
 </iframe>
