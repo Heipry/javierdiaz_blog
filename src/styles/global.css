@@ -269,3 +269,11 @@ hr {
 	color: rgb(var(--gray-light));
 	
 }
+.formato-tabla{
+	border-spacing: 0;
+}
+.formato-tabla td{
+	border: 1px solid rgb(var(--gray-dark));
+	padding: 6px;
+	line-height: 1.4em;
+}
