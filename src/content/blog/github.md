@@ -1,7 +1,7 @@
 ---
 title: 'Subir Proyectos a GitHub: Guía Práctica'
 description: 'Guía sobre cómo subir un proyecto local a GitHub, presentando dos metodologías principales'
-pubDate: '21 Apr 2025'
+pubDate: '12 Apr 2025'
 heroImage: '../../assets/blog-github.jpg'
 ---
 ## Subir un Proyecto Local a GitHub
@@ -31,7 +31,7 @@ Si el repositorio local ya tiene configurado un remoto Git (por ejemplo, de otro
 ```bash
 git remote -v
 git remote remove origin
-````
+```
 
 Esto asegura una conexión limpia con el nuevo repositorio de GitHub.
 
@@ -46,7 +46,7 @@ En la ventana "Publicar repositorio" se deben especificar los detalles:
 
 * **Nombre**: se puede usar el predeterminado o escribir uno nuevo.
 * **Descripción (Opcional)**: añadir una breve descripción del proyecto.
-* **Visibilidad (Público/Privado)**: por defecto es privado. Para hacerlo público, desmarcar la opción "Mantener este código privado".
+* **Visibilidad (Público/Privado)**: por defecto es privado si tienes una cuenta pro. Para hacerlo público, desmarcar la opción "Mantener este código privado". Si tu cuenta es free no tendrás opción.
 * **Organización (Opcional)**: si se desea publicar en una organización, se selecciona en el menú desplegable. De lo contrario, dejar en "Ninguno".
 
 Finalmente, hacer clic en **Publicar repositorio**.
@@ -61,10 +61,11 @@ Este método es preferido por muchos desarrolladores por su control y flexibilid
 
 #### Crear un Nuevo Repositorio en GitHub (Web)
 
-1. Acceder a [github.com](https://github.com) y crear un nuevo repositorio.
+1. Acceder a <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a> y crear un nuevo repositorio.
 2. Asignar un nombre y una descripción.
 3. Elegir si será público o privado.
-4. **Importante**: dejar sin marcar la opción de crear README.
+
+**Importante**: dejar sin marcar la opción de crear README.
 
 Finalmente, hacer clic en **Crear repositorio**.
 
@@ -95,7 +96,7 @@ git push -u origin main
 
 #### Manejo de Conflictos: *fatal: refusing to merge unrelated histories*
 
-Si el remoto ya tiene commits y el local también, puede aparecer este error.
+Si el remoto ya tiene commits y el local también, puede aparecer este error. Pasa mucho si finalmente no desmarcaste la opción de crear README.
 
 **Solución**:
 
@@ -110,14 +111,16 @@ Esto permite fusionar ambos historiales.
 
 ## Conclusión
 
-Las fuentes proporcionan una guía clara y concisa para dos métodos comunes de subir proyectos locales a GitHub.
+Tenemos dos métodos comunes de subir proyectos locales a GitHub.
 
 * **GitHub Desktop** ofrece una experiencia más visual y simplificada.
 * **La línea de comandos** brinda un control más granular.
 
 Ambos métodos son efectivos para lograr el mismo objetivo: alojar un proyecto local en la plataforma de GitHub.
 
-Es crucial entender los pasos de inicialización, commit y vinculación con el remoto, así como las soluciones para posibles conflictos de historial.
+Solo debes entender los pasos de inicialización, commit y vinculación con el remoto, así como las soluciones para posibles conflictos de historial.
+
+Te dejo un video con esta misma información:
 
 <video width="100%" controls>
   <source src="/assets/uso-github.mp4" type="video/mp4" />
