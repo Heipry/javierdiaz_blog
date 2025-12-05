@@ -140,6 +140,9 @@ hr {
 	main {
 		padding: 1em;
 	}
+	.internal-links a {
+		font-size: 14px;
+	}
 }
 
 .sr-only {
