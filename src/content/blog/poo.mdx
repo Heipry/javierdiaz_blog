@@ -1,0 +1,108 @@
+---
+title: 'La POO explicada para humanos'
+description: 'El "Click" mental: De recetas a franquicias'
+pubDate: '18 Apr 2026'
+heroImage: '../../assets/blog-correlacion.jpg'
+---
+import Lightbox from '../../components/Lightbox.astro';
+
+## Por qué este "click" mental cambiará tu forma de programar
+
+Programar puede sentirse, al principio, como seguir una receta de cocina: haces A, luego B, y si pasa C, entonces saltas a D. Es lo que conocemos como programación estructurada. Sin embargo, llega un momento en la carrera de todo desarrollador en el que este enfoque lineal se queda corto ante la complejidad del mundo real. Aquí es donde surge la Programación Orientada a Objetos (POO), un paradigma que no es solo una técnica, sino una forma de entender la realidad que se adapta mucho mejor al pensamiento humano que a la lógica fría de la máquina.
+
+## De recetas a franquicias
+
+La gran diferencia entre la programación tradicional y la POO es el paso de ser un seguidor de recetas a convertirte en un ingeniero de franquicias.
+<Lightbox src="poo.jpg"  alt="Diferencia tradicional vs POO" />
+
+
+Mientras que un cocinero se enfoca en producir un plato siguiendo pasos secuenciales (el enfoque estructurado), el ingeniero de franquicias diseña los procesos, las herramientas y las estaciones de trabajo para que mil cocinas funcionen solas. El "click" mental ocurre cuando dejas de escribir instrucciones para resolver un problema específico y empiezas a diseñar sistemas que crean soluciones. Históricamente, el software fallaba porque era rígido; la POO permite que el diseño evolucione y se adapte a requerimientos no planificados sin tener que reescribir todo el sistema desde cero.
+
+## Clases y Objetos: El plano y el coche real
+
+Para dominar la POO, debemos distinguir entre el molde estático y el producto dinámico.
+
+- **La Clase**: Es el elemento estático. Imagínala como un plano arquitectónico o un molde de magdalenas. En términos de ingeniería, la clase es la implementación de un TAD (Tipo Abstracto de Datos): define una estructura y un comportamiento comunes para todos los objetos que nazcan de ella.  
+- **El Objeto (o Instancia)**: Es lo que "cobra vida" en tiempo de ejecución. Es el coche real que puedes conducir, que ocupa un espacio en memoria y tiene un estado propio. Es un elemento autónomo que proporciona servicios basados en los datos que implementa.
+
+Como bien define Grady Booch, uno de los padres del paradigma:
+
+> “Un método de implementación en el que los programas se organizan como colecciones cooperativas de objetos, cada uno de los cuales representa una instancia de alguna clase y, cuyas clases son miembros de jerarquías de clases unidas a través de una relación de herencia”.
+<Lightbox src="principios1y2.jpg"  alt="Abstracción y Encapsulamiento" />
+
+## Abstracción: Conducir sin ser mecánico
+
+La abstracción es el arte de ignorar lo irrelevante para concentrarse en lo esencial. Es nuestro mecanismo principal para gestionar sistemas con una cantidad ingente de detalles.
+
+Piénsalo así: para conducir un coche, solo necesitas conocer la interfaz (volante, pedales, palanca de cambios). No necesitas entender la termodinámica del motor o la inyección de combustible. En el software, la abstracción nos permite modelar problemas complejos definiendo qué hace un objeto, permitiéndonos ignorar el cómo lo hace hasta que sea estrictamente necesario.
+
+## Encapsulamiento: El mando a distancia de tu código
+
+Si la abstracción define la interfaz (el qué), el encapsulamiento protege la implementación (el cómo).
+
+Imagina el mando a distancia de tu televisor. Tienes botones para interactuar, pero la electrónica interna está sellada. El encapsulamiento garantiza la integridad de los datos, evitando que agentes externos manipulen el estado interno de un objeto de forma no autorizada. Esto permite cambiar la implementación interna sin afectar a quien usa el objeto.
+
+<Lightbox src="principios3y4.jpg"  alt="Herencia y Polimorfismo" />
+
+## Herencia: El árbol genealógico del software
+
+La herencia nos permite crear jerarquías de clases para no tener que reinventar la rueda. Si definimos una clase genérica llamada `Vehículo` con el atributo `ruedas`, una clase `Camión` puede heredar esa propiedad y añadir sus propios atributos específicos, como `capacidadDeCarga`. Este principio potencia la extensibilidad y facilita la reutilización.
+
+## Polimorfismo: El enchufe universal
+
+El polimorfismo es la razón por la que el software orientado a objetos se siente como un sistema flexible y bien acoplado.
+
+La analogía ideal es el enchufe universal: muchos aparatos (una lámpara, un portátil, un ventilador) se conectan al mismo tipo de toma de corriente. El enchufe envía el mismo mensaje, pero cada aparato responde de una forma distinta. En POO, esto significa que diferentes objetos pueden responder a un mismo mensaje de manera específica.
+
+
+## La anatomía de la identidad: Carlos y Pablo
+
+Un error común es confundir los atributos de un objeto con su identidad. La identidad es la propiedad que distingue a un objeto de forma permanente, independientemente de que sus datos cambien.
+
+Consideremos dos objetos de la clase `Empleado`:
+
+1. Carlos (DNI 1234567A)  
+2. Pablo (DNI 7654321B)  
+
+Si Carlos cambia su nombre a "Charlie", su identidad sigue siendo la misma. Sigue siendo el mismo objeto.
+
+Además, distinguimos entre:
+
+- **Variables de instancia**: Atributos propios de cada objeto, como el nombre.  
+- **Variables de clase**: Atributos compartidos por todos los objetos, como el centro de trabajo si es común.
+
+## De la teoría a la práctica: La clase Empleado
+
+En lenguajes como Java, estos principios se aplican mediante modificadores de acceso como `private` y métodos públicos. Los IDE modernos facilitan la creación de getters y setters.
+
+Ejemplo:
+
+```java
+class Empleado {
+    // Atributos privados para garantizar el encapsulamiento
+    private String nombre;
+    private String dni;
+    private String categoria;
+    private Date fechaIngreso;
+    
+    // La base de cotización se define como char (valores: 'A', 'B', 'C', 'D')
+    private char baseCotizacion;
+
+    // Constructor
+    public Empleado(String nombre, String dni, String categoria, Date fechaIngreso, char baseCotizacion) {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.categoria = categoria;
+        this.fechaIngreso = fechaIngreso;
+        this.baseCotizacion = baseCotizacion;
+    }
+
+    // Comportamiento
+    public int calcularNomina() {
+        return 0; 
+    }
+
+    public void imprimirDatosPersonales() {
+        System.out.println("Empleado: " + this.nombre + " | DNI: " + this.dni);
+    }
+}
