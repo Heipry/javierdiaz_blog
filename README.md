@@ -20,7 +20,8 @@ En mi trayectoria he trabajado como desarrollador, gestor de proyectos IT y doce
 Este blog está pensado tanto para quienes dan sus primeros pasos como para profesionales que buscan perfeccionar sus habilidades.  
 Los temas principales que trato son:
 
-- **Desarrollo Web (Front-end y Back-end):** HTML5, CSS3, JavaScript (ES6+) y PHP.  
+- **Desarrollo Web:** HTML5, CSS3, JavaScript (ES6+).
+- **Principios de programación:** Python, Java, JavaScript y PHP.
 - **Diseño UX/UI:** Principios de usabilidad y experiencia de usuario para interfaces intuitivas.  
 - **Gestión de Proyectos:** Estrategias, metodologías ágiles y herramientas para coordinar equipos.  
 - **Reflexiones del sector:** Tendencias tecnológicas y evolución del ecosistema digital.  
