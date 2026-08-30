@@ -211,3 +211,5 @@ Para que tengas siempre a mano los tipos de commits y ejemplos prácticos, **he 
 <iframe src="/assets/commits.pdf" width="100%" height="600px">
   <p>Tu navegador no soporta iframes. Puedes descargar el PDF <a href="/assets/commits.pdf">aquí</a>.</p>
 </iframe>
+
+¡Con esta información no volverás a tener dudas al escribir tus mensajes de commit!
