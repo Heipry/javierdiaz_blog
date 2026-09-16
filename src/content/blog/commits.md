@@ -1,7 +1,7 @@
 ---
 title: 'Guía de estilo para commits en Git'
 description: 'Esta guía práctica explica los tipos de commits, convenciones de formato, cuándo usar inglés o español, y ejemplos listos para aplicar en tus proyectos.'
-pubDate: 'MAr 16 2025'
+pubDate: '16 Mar 2025'
 heroImage: '../../assets/blog-commits.jpg'
 ---
 

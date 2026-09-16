@@ -1,0 +1,361 @@
+---
+title: '4 Herramientas de Excel que Transformarán tu Toma de Decisiones'
+description: 'De la Búsqueda de objetivos al Solver: cómo utilizar el análisis What-If de Excel para explorar escenarios, evaluar alternativas y optimizar decisiones empresariales.'
+pubDate: '16 Aug 2026'
+heroImage: '../../assets/blog-solver.jpg'
+---
+
+import Lightbox from '../../components/Lightbox.astro';
+
+## ¿Y si Excel pudiera ayudarte a decidir antes de actuar?
+
+Imagina que tienes que decidir cuánto invertir en publicidad para alcanzar un determinado beneficio. O que necesitas establecer cuánto producir de cada producto cuando tienes un presupuesto limitado y unas cantidades mínimas y máximas que debes respetar.
+
+Una forma de hacerlo sería modificar valores manualmente, recalcular y volver a empezar hasta encontrar una combinación que parezca adecuada.
+
+Pero... Excel ofrece una alternativa mucho más potente.
+
+Sus herramientas de **Análisis de hipótesis (What-If)** permiten plantear preguntas del tipo *«¿qué pasaría si...?»* y estudiar sus consecuencias sin tener que reconstruir continuamente el modelo. Y cuando el problema deja de consistir en probar alternativas y pasa a ser **encontrar la mejor combinación posible bajo determinadas restricciones**, entra en juego Solver.
+
+De este modo, Excel puede pasar de ser una simple hoja de cálculo a convertirse en una herramienta para **analizar, comparar y optimizar decisiones**.
+
+---
+
+## 1. Búsqueda de objetivos: empezar por el resultado
+
+La **Búsqueda de objetivos** (*Goal Seek*) resulta especialmente útil cuando conocemos el resultado que queremos conseguir, pero desconocemos qué valor de entrada necesitamos para alcanzarlo.
+
+Es, en esencia, un cálculo inverso. Supongamos que una empresa quiere conseguir un beneficio de 5.000 €. Tenemos una fórmula que calcula el beneficio a partir de las ventas, pero no sabemos cuántas unidades necesitamos vender.
+
+En lugar de probar 1.000, 1.100, 1.200 unidades y repetir el cálculo, podemos indicarle a Excel:
+
+> Quiero que esta celda tenga un determinado resultado. Averigua qué valor debe tomar esta otra celda.
+
+Excel modificará la **celda cambiante** hasta encontrar un valor que permita alcanzar el objetivo.
+
+### ¿Cuándo utilizarla?
+
+La Búsqueda de objetivos es adecuada cuando:
+
+* Tenemos **una única variable** que podemos modificar.
+* Existe una fórmula que relaciona esa variable con el resultado.
+* Conocemos el resultado que queremos conseguir.
+
+Por ejemplo:
+
+* ¿Qué precio necesito para alcanzar un margen del 30 %?
+* ¿Cuántas unidades debo vender para conseguir 10.000 € de beneficio?
+* ¿Qué porcentaje de conversión necesito para alcanzar determinado número de clientes?
+
+La idea fundamental es sencilla:
+
+> **Conocemos el efecto → buscamos la causa que lo produce.**
+
+---
+
+## 2. Tablas de datos: explorar muchas posibilidades de una sola vez
+
+La Búsqueda de objetivos responde a una pregunta muy concreta. Pero en ocasiones no queremos conocer **un único valor**, sino analizar cómo cambia el resultado ante diferentes posibilidades.
+
+Aquí aparecen las **Tablas de datos** del análisis What-If.
+
+Una tabla de datos permite estudiar cómo una o dos variables afectan a un resultado determinado.
+
+### Tabla de datos
+
+Podemos, por ejemplo, analizar qué beneficio obtendríamos con diferentes precios:
+<table class="formato-tabla">
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Beneficio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20 €</td>
+      <td>...</td>     
+    </tr>
+    <tr>
+      <td>24 €</td>
+      <td>...</td>
+    </tr>
+     <tr>
+      <td>26 €</td>
+      <td>...</td>
+       <tr>
+      <td>28 €</td>
+      <td>...</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+Excel calcula automáticamente el resultado correspondiente a cada alternativa.
+
+El análisis resulta todavía más interesante cuando intervienen dos factores.
+
+Por ejemplo, podemos estudiar simultáneamente:
+
+* distintos precios de venta;
+* diferentes cantidades vendidas.
+
+El resultado será una matriz en la que cada combinación muestra el beneficio obtenido.
+
+Esto permite detectar rápidamente zonas favorables y desfavorables del modelo sin tener que modificar manualmente las entradas una por una.
+
+Las tablas de datos son especialmente útiles para responder preguntas como:
+
+> **¿Qué ocurre con el beneficio si modificamos simultáneamente el precio y las ventas?**
+
+---
+
+## 3. Escenarios: comparar futuros posibles
+
+Otra herramienta del análisis What-If es el **Administrador de escenarios**.
+
+Su lógica es diferente a la de las tablas de datos. En lugar de generar una matriz de todas las combinaciones posibles, permite guardar diferentes conjuntos de valores y alternar entre ellos.
+
+Por ejemplo, una empresa podría definir:
+
+* **Pesimista:** menos ventas y mayores costes.
+* **Realista:** previsión central.
+* **Optimista:** más ventas y menores costes.
+
+Cada escenario contiene un conjunto determinado de valores para las celdas que queremos analizar.
+
+La ventaja es que podemos cambiar entre diferentes hipótesis manteniendo el mismo modelo. Esto resulta especialmente interesante cuando queremos preparar una planificación financiera, estudiar la evolución de un proyecto o valorar cómo podría comportarse un negocio ante diferentes condiciones.
+
+### Tres herramientas, tres preguntas
+
+Hasta aquí podemos resumir el análisis What-If de Excel de una forma muy sencilla:
+
+
+
+<table class="formato-tabla">
+  <thead>
+    <tr>
+      <th>Herramienta</th>
+      <th>Pregunta que responde</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Búsqueda de objetivos</strong></td>
+      <td>¿Qué valor necesito para conseguir este resultado?</td>
+    </tr>
+    <tr>
+      <td><strong>Tabla de datos</strong></td>
+      <td>¿Cómo cambia el resultado si modifico una o dos variables?</td>
+    </tr>
+    <tr>
+      <td><strong>Escenarios</strong></td>
+      <td>¿Qué ocurre bajo diferentes conjuntos de hipótesis?</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<Lightbox src="hipotesis.png"  alt="Casos de uso de búsqueda de objetivos, tablas de datos y escenarios" />
+
+Pero todavía falta una situación más compleja. ¿Qué ocurre cuando no queremos simplemente analizar alternativas, sino **encontrar la mejor combinación posible**?
+
+---
+
+## 4. Solver: encontrar la mejor combinación bajo restricciones
+
+Aquí es donde aparece **Solver**. La diferencia fundamental respecto a la Búsqueda de objetivos es que Solver puede modificar **varias variables de decisión simultáneamente** mientras intenta optimizar un resultado y respetar una serie de restricciones.
+
+Por ejemplo:
+
+> Quiero maximizar el beneficio, pero no puedo gastar más de 3.000 €, debo fabricar al menos 100 unidades de un producto y no puedo vender más de 500 unidades de otro.
+
+Ya no estamos ante una única ecuación que resolver. Tenemos un **problema de optimización**.
+
+### Las tres piezas de un modelo Solver
+
+Todo modelo de Solver parte de tres elementos:
+
+**1. Celda objetivo**
+
+Es el resultado que queremos optimizar. Puede tratarse, por ejemplo, de:
+
+* maximizar beneficios;
+* minimizar costes;
+* minimizar tiempos;
+* alcanzar un determinado valor.
+
+**2. Celdas variables**
+
+Son las celdas cuyos valores puede modificar Solver. Representan nuestras **variables de decisión**: unidades a fabricar, cantidades a comprar, recursos a asignar, etc.
+
+**3. Restricciones**
+
+Definen las condiciones que debe cumplir la solución. Pueden representar límites de presupuesto, capacidad, cantidades mínimas o máximas y otras condiciones lógicas.
+
+
+---
+
+## Un ejemplo práctico: optimizar la producción
+
+Veamos un caso sencillo. Una empresa textil fabrica dos tipos de prendas deportivas.
+
+### Producto 1: Leggins Push Up
+
+* Coste de producción: **14 € por unidad**
+* Beneficio: **15 € por unidad**
+* Máximo de ventas: **500 unidades**
+
+### Producto 2: Leggins Reductores
+
+* Coste de producción: **17 € por unidad**
+* Beneficio: **18 € por unidad**
+* Producción mínima contractual: **100 unidades**
+
+<table class="formato-tabla">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Coste de producción</th>
+      <th>Beneficio por unidad</th>
+      <th>Restricción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Leggins Push Up</strong></td>
+      <td>14 €</td>
+      <td>15 €</td>
+      <td>Máximo 500 unidades</td>
+    </tr>
+    <tr>
+      <td><strong>Leggins Reductores</strong></td>
+      <td>17 €</td>
+      <td>18 €</td>
+      <td>Mínimo 100 unidades</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+
+Además, la empresa dispone de un presupuesto máximo de producción de **3.000 €**. La pregunta es:
+
+> **¿Cuántas unidades de cada producto debemos fabricar para maximizar el beneficio sin superar el presupuesto?**
+
+---
+
+## Construimos el modelo
+
+Podemos utilizar dos celdas como variables de decisión:
+
+* `F3`: unidades de Leggins Push Up.
+* `F4`: unidades de Leggins Reductores.
+
+La celda objetivo calcula el beneficio total:
+
+```text
+=(F3*15)+(F4*18)
+```
+
+Y otra celda calcula el coste total de fabricación:
+
+```text
+=(F3*14)+(F4*17)
+```
+
+A continuación configuramos Solver para **maximizar la celda del beneficio**, modificando `F3:F4`. Las restricciones serán:
+
+```text
+F3 <= 500
+F4 >= 100
+Coste total <= 3000
+F3:F4 = enteras
+```
+
+La última restricción es importante. Si estamos fabricando prendas, no tiene sentido que Solver proponga fabricar **92,86 unidades**. Por tanto, debemos indicarle que las variables de producción sean enteras.
+
+---
+
+## ¿Qué solución obtiene Solver?
+
+Con estas condiciones, Solver encuentra la siguiente combinación:
+
+* **92 Leggins Push Up**
+* **100 Leggins Reductores**
+
+El coste de fabricación es:
+
+**92 × 14 € + 100 × 17 € = 2.988 €**
+
+Y el beneficio obtenido es:
+
+**92 × 15 € + 100 × 18 € = 3.180 €**
+
+La solución cumple todas las restricciones:
+
+* No supera las 500 unidades de Push Up.
+* Fabrica al menos 100 Reductores.
+* No supera el presupuesto de 3.000 €.
+* Las cantidades son números enteros.
+
+Este ejemplo permite apreciar la diferencia fundamental entre una herramienta como Búsqueda de objetivos y Solver.
+
+La primera puede responder:
+
+> **«¿Qué cantidad necesito para alcanzar determinado resultado?»**
+
+Solver puede responder:
+
+> **«De todas las combinaciones posibles, ¿cuál proporciona el mejor resultado respetando estas condiciones?»**
+
+
+---
+
+<Lightbox src="solver.png"  alt="Procedimiento de uso de solver" />
+---
+
+## Elegir el método de resolución
+
+Solver dispone de diferentes métodos de resolución: Simplex LP, GRG Nonlinear y Evolutionary.
+
+<table class="formato-tabla">
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Tipo de problema</th>
+      <th>Cuándo utilizarlo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Simplex LP</strong></td>
+      <td>Lineal</td>
+      <td>Cuando las relaciones entre las variables y el resultado pueden expresarse mediante operaciones lineales, como ocurre en un modelo de producción con costes y beneficios por unidad.</td>
+    </tr>
+    <tr>
+      <td><strong>GRG Nonlinear</strong></td>
+      <td>No lineal</td>
+      <td>Cuando las relaciones matemáticas entre las variables no son lineales y el modelo presenta cambios continuos.</td>
+    </tr>
+    <tr>
+      <td><strong>Evolutionary</strong></td>
+      <td>Complejo o no lineal</td>
+      <td>Cuando existen relaciones complejas, decisiones discretas o funciones que dificultan la utilización de los métodos tradicionales.</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+## Del análisis a la decisión
+
+Estas herramientas representan diferentes niveles de análisis. Primero podemos utilizar una **Búsqueda de objetivos** para averiguar qué necesitamos para alcanzar una meta. 
+
+Después podemos utilizar **Tablas de datos** para explorar cómo cambia el resultado ante diferentes valores.
+
+Los **Escenarios** nos permiten comparar conjuntos completos de hipótesis. Y finalmente, cuando existen múltiples variables y restricciones, **Solver** permite buscar una solución que optimice nuestro objetivo.
+
+---
+
+## Excel como herramienta de decisión
+
+El verdadero potencial de estas herramientas no está en hacer que Excel «piense por nosotros». Está en permitirnos **convertir una decisión empresarial en un modelo matemático que podamos analizar**.
+
+La calidad del resultado dependerá siempre de la calidad del modelo: las fórmulas, los datos, las variables y las restricciones deben representar correctamente la realidad que queremos estudiar.
+
